@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #09090b;
+    color: #f4f4f5;
+  }
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

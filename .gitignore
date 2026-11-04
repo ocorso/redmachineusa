@@ -39,3 +39,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor & vim swap files
+.vscode/
+*.swp
+
+# local ollama modelfiles
+Modelfile
+
+# php database & google cloud secrets
+db-config.php
+*.secret.php
+credentials.json
+service-account*.json
+
+# rehearsal audio files
+*.mp3
+*.wav
