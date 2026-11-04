@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Red Machine USA (`redmachineusa.com`)
 
-## Getting Started
+Official web platform, Electronic Press Kit (EPK), and original music archive for **Red Machine USA** — a New Jersey 5-piece classic blues, indie, and gritty rock & roll band fronted by Owen "O Red" Corso — alongside Owen Corso's solo acoustic performances.
 
-First, run the development server:
+🌐 **Live Site:** [https://redmachineusa.com](https://redmachineusa.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Roadmap & Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Phase 1 — Live Performance EPK & Booking (Live):** Turnkey booking portal comparing the **Full 5-Piece Electric Band** and **Solo Acoustic** formats, stage/PA specifications, band biography (`/bio`), and a direct booking inquiry system.
+* **Phase 2 — Original Music Catalogue (In Progress):** Relational archive spanning multiple bands and eras (*Red Machine*, *Ocelot Red*, *The Good News Band*) with lyrics, release histories, and liner notes.
+* **Phase 3 — "AI Twin" Interactive Chat (Planned):** Conversational AI bandmate trained on the complete musical catalogue, song histories, and band lore.
+* **Phase 4 — Rehearsal Audio Vault (Planned):** On-demand streaming of studio and rehearsal recordings synced from Google Drive.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+* **Frontend:** [Next.js](https://nextjs.org/) (App Router, TypeScript, Static Export via `output: 'export'`)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) + Google Fonts (`Oswald`, `Geist`)
+* **Backend API:** Lightweight stateless PHP endpoints (`/api/book.php`) + MySQL/MariaDB via PDO
+* **Infrastructure:** Apache Virtual Hosts on Google Cloud Platform (GCP Compute Engine)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Local Development
 
-## Deploy on Vercel
+1. **Install dependencies:**
+   `npm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Run the Next.js development server:**
+   `npm run dev`
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Build the static production export:**
+   `npm run build`
+   Compiled static assets are generated in the `out/` directory for Apache deployment.
+
+---
+
+## Security & Environment Configuration
+
+Database credentials, API keys, and server environment variables are strictly excluded from version control via `.gitignore` and loaded at runtime via server-side environment configurations.
+
+---
+
+## Connect
+
+* **Booking & Inquiries:** [redmachineusa@gmail.com](mailto:redmachineusa@gmail.com)
+* **YouTube:** [bit.ly/RMonYT](https://bit.ly/RMonYT)
+* **SoundCloud:** [soundcloud.com/redmachineusa](https://soundcloud.com/redmachineusa)
+* **Instagram:** [@redmachineusa](https://instagram.com/redmachineusa)
+* **Facebook:** [facebook.com/redmachineusa](https://facebook.com/redmachineusa)
+* **X / Twitter:** [@redmachineusa](https://twitter.com/redmachineusa)
+* **More Projects:** [ORed.net](https://ored.net)
